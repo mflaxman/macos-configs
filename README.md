@@ -8,6 +8,7 @@ Always `$ curl > filename` and inspect the contents before piping to bash!
 
 ## Brew Package Manager
 https://brew.sh/
+(see `brew.md` for details)
 
 ## Firefox (chrome not open source)
 https://www.mozilla.org/en-US/firefox
