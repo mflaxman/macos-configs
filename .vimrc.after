@@ -6,3 +6,7 @@ set textwidth=0
 set cc=80
 set nowrap
 set wildignore+=*/venv/*
+
+" Syntastic
+" https://github.com/carlhuda/janus/blob/010fe664b55ee82a6afc1b1703a6c800d1288934/janus/vim/core/janus/doc/janus.txt#L320
+let g:syntastic_mode_map = {'mode': 'active'}
