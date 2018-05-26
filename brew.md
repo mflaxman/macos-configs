@@ -2,10 +2,10 @@
 
 Regular
 ```bash
-$ brew install htop ipython colordiff sqlite ag go tree
+$ brew install ag colordiff go htop ipython sqlite tree
 ```
 
 Casks:
 ```bash
-$ brew cask install freesmug-chromium keepassx atom macvim tunnelblick
+$ brew cask install atom freesmug-chromium keepassx macvim transmission tunnelblick virtualbox vlc
 ```
