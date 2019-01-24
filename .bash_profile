@@ -11,7 +11,9 @@ alias random_password='cat /dev/random | LC_CTYPE=C tr -cd 123456789ABCDEFGHJKLM
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # For homebrew searching github and not getting rate-limited
-export HOMEBREW_GITHUB_API_TOKEN="e766f3917d171e93f8bbe2eaff50e1b66a3f4374"
+# https://stackoverflow.com/questions/20130681/setting-github-api-token-for-homebrew
+# https://github.com/settings/tokens
+export HOMEBREW_GITHUB_API_TOKEN="REPLACE WITH REAL TOKEN"
 
 # include .bashrc if it exists
 if [ -f ~/.bashrc ]; then
