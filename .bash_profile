@@ -13,7 +13,7 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 # For homebrew searching github and not getting rate-limited
 # https://stackoverflow.com/questions/20130681/setting-github-api-token-for-homebrew
 # https://github.com/settings/tokens
-export HOMEBREW_GITHUB_API_TOKEN="REPLACE WITH REAL TOKEN"
+export HOMEBREW_GITHUB_API_TOKEN="REPLACE_WITH_REAL_TOKEN"
 
 # include .bashrc if it exists
 if [ -f ~/.bashrc ]; then
