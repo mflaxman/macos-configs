@@ -7,6 +7,9 @@ alias ls='ls -GFh'
 # Make a base58 password that is 64 chars long (probably too long):
 alias random_password='cat /dev/random | LC_CTYPE=C tr -cd 123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz | head -c${1:-64}; echo'
 
+# https://coderwall.com/p/euwpig/a-better-git-log
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
 # For homebrew searching github and not getting rate-limited
 export HOMEBREW_GITHUB_API_TOKEN="e766f3917d171e93f8bbe2eaff50e1b66a3f4374"
 
