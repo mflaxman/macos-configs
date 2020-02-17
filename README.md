@@ -16,3 +16,7 @@ https://www.mozilla.org/en-US/firefox
 ## Janus (VIM config)
 https://github.com/carlhuda/janus
 (see `.vimrc.after` for minor custom tweaks)
+
+## DisplayPort (HDMI) Audio Config
+https://apple.stackexchange.com/questions/343902/how-to-control-sound-of-connected-external-monitor
+(soundflower/soundflowerbed already isntalled in `brew.md`)
