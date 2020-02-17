@@ -7,5 +7,5 @@ $ brew install ag colordiff go htop ipython sqlite tree
 
 Casks:
 ```bash
-$ brew cask install atom freesmug-chromium keepassx macvim transmission tunnelblick virtualbox vlc
+$ brew cask install atom freesmug-chromium keepassx macvim soundflower soundflowerbed transmission tunnelblick virtualbox vlc
 ```
