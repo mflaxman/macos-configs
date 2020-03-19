@@ -15,6 +15,9 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 # https://github.com/settings/tokens
 export HOMEBREW_GITHUB_API_TOKEN="REPLACE_WITH_REAL_TOKEN"
 
+# https://stackoverflow.com/questions/51126403/you-dont-have-write-permissions-for-the-library-ruby-gems-2-3-0-directory-ma
+export GEM_HOME="$HOME/.gem"
+
 # include .bashrc if it exists
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc
