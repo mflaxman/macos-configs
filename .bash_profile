@@ -15,8 +15,14 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 # https://github.com/settings/tokens
 export HOMEBREW_GITHUB_API_TOKEN="REPLACE_WITH_REAL_TOKEN"
 
+# Ruby Junk. Ugh.
 # https://stackoverflow.com/questions/51126403/you-dont-have-write-permissions-for-the-library-ruby-gems-2-3-0-directory-ma
 export GEM_HOME="$HOME/.gem"
+# Sketchy fix, not sure why these are still required
+# (see if you can get by without it on next installation or just switch to rbenv altogether?):
+# https://help.rubygems.org/discussions/problems/739-how-to-run-applications-installed-by-gem
+export PATH=$PATH:/Users/mflaxman/.gem/bin
+export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 # include .bashrc if it exists
 if [ -f ~/.bashrc ]; then
