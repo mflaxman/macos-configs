@@ -2,7 +2,7 @@
 
 Regular
 ```bash
-$ brew install ag colordiff go htop ipython sqlite tree
+$ brew install ag colordiff go htop ipython ruby sqlite tree
 ```
 
 Casks:
