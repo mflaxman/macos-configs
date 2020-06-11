@@ -24,6 +24,12 @@ export GEM_HOME="$HOME/.gem"
 export PATH=$PATH:/Users/mflaxman/.gem/bin
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
+# https://github.com/pyenv/pyenv
+# unsure if this belongs in .bash_profile instead?
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
 # include .bashrc if it exists
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc
