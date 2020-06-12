@@ -1,6 +1,17 @@
-" MF changes
+" MF changes start here
+"
+" Show line numbers:
 set number
 
+" Highlight search results
+set hlsearch
+
+" Better case sensitivity in search
+" https://stackoverflow.com/questions/2287440/how-to-do-case-insensitive-search-in-vim/2288438
+set ignorecase
+set smartcase
+
+" Defaults start here
 " Defaults https://tpaschalis.github.io/vim-go-setup/
 
 syntax on
