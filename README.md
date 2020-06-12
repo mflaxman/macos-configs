@@ -26,6 +26,26 @@ Open vim (with `$ vim`) and then type `:GoInstallBinaries`.
 Plan B for vim config if golang wasn't the focus:
 https://github.com/amix/vimrc
 
+## SSH Key Instructions
+High level below, if it doesn't work or you want more info see [here](https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54) for details.
+
+Generate key. Choose a long passworth that we'll later add to your ssh agent:
+```bash
+$ ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519_20200612 -C "ssh_key_ed25519_20200612@michaelflaxman.com"
+```
+(date is optional but nice, replace with today's date if following this)
+
+Update `IdentityFile` in `config` so that it matches the key you just generated. Then copy over the config file:
+```bash
+$ cp config ~/.ssh/config
+```
+
+Add key to agent (change filename accordingly):
+```bash
+$ ssh-add ~/.ssh/id_ed25519_20200612
+
+```
+
 ## DisplayPort (HDMI) Audio Config
 https://apple.stackexchange.com/questions/343902/how-to-control-sound-of-connected-external-monitor
 (soundflower/soundflowerbed already isntalled in `brew.md`)
