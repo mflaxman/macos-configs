@@ -9,3 +9,4 @@ Casks:
 ```bash
 $ brew cask install atom freesmug-chromium keepassx macvim soundflower soundflowerbed postgres transmission tunnelblick virtualbox vlc
 ```
+TODO: migrate to keepassxc
