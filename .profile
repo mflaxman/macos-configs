@@ -28,7 +28,8 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Add Visual Studio Code (code)
-export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# https://code.visualstudio.com/docs/setup/mac
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # https://github.com/pyenv/pyenv
 # unsure if this belongs in .bash_profile instead?
