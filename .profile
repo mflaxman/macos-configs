@@ -37,6 +37,10 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
+# Homebrew hack for openssl (not libressl)
+# https://stackoverflow.com/questions/56639315/updating-openssl-to-1-1-1-on-macos/62723840#62723840
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+
 # include .bashrc if it exists
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc
