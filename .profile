@@ -31,6 +31,12 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # https://code.visualstudio.com/docs/setup/mac
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
+# https://sourabhbajaj.com/mac-setup/Go/README.html
+export GOPATH=$HOME/go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+
 # https://github.com/pyenv/pyenv
 # unsure if this belongs in .bash_profile instead?
 if command -v pyenv 1>/dev/null 2>&1; then
