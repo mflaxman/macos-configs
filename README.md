@@ -26,6 +26,16 @@ Open vim (with `$ vim`) and then type `:GoInstallBinaries`.
 Plan B for vim config if golang wasn't the focus:
 https://github.com/amix/vimrc
 
+## secp256k1 Instructions
+(This is for bitcoin stuff)
+
+```bash
+$ cd ~/workspace && git clone https://github.com/bitcoin-core/secp256k1 && cd secp256k1
+$ ./autogen.sh && ./configure --enable-module-recovery && make && make check && sudo sudo make install
+```
+
+
+
 ## SSH Key Instructions
 High level below, if it doesn't work or you want more info see [here](https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54) for details.
 
