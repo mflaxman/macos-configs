@@ -19,9 +19,15 @@ https://tpaschalis.github.io/vim-go-setup/
 $ git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go && \
   git clone https://github.com/scrooloose/nerdtree.git ~/.vim/pack/dist/start/nerdtree && \
   git clone https://github.com/vim-airline/vim-airline ~/.vim/pack/dist/start/vim-airline && \
-  git clone https://github.com/tpope/vim-fugitive.git ~/.vim/pack/dist/start/vim-fugitive
+  git clone https://github.com/tpope/vim-fugitive.git ~/.vim/pack/dist/start/vim-fugitive && \
+  git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/pack/dist/start/ctrlpvim
 ```
-Open vim (with `$ vim`) and then type `:GoInstallBinaries`.
+Open vim (with `$ vim`) and then type:
+```
+:GoInstallBinaries`
+:helptags ~/.vim/pack/dist/start/ctrlpvim
+```
+
 
 Plan B for vim config if golang wasn't the focus:
 https://github.com/amix/vimrc

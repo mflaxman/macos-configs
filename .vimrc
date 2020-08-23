@@ -105,3 +105,6 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
+" https://ctrlpvim.github.io/ctrlp.vim/#installation
+set runtimepath^=~/.vim/pack/dist/start/ctrlpvim
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
