@@ -108,3 +108,5 @@ let g:airline_symbols.linenr = ''
 " https://ctrlpvim.github.io/ctrlp.vim/#installation
 set runtimepath^=~/.vim/pack/dist/start/ctrlpvim
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+" Search only by filename (not directory):
+let g:ctrlp_by_filename = 1
