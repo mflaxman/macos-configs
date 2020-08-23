@@ -110,3 +110,6 @@ set runtimepath^=~/.vim/pack/dist/start/ctrlpvim
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 " Search only by filename (not directory):
 let g:ctrlp_by_filename = 1
+" Use ag as backend (which follows .gitignore conventions):
+" https://superuser.com/a/915114
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
