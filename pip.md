@@ -2,11 +2,15 @@
 
 Regular
 ```bash
-$ pip3 install ipython virtualenv flake8 black requests git+https://github.com/jeffkaufman/icdiff.git
+$ pip3 black flake8 install ipython pyspelling requests virtualenv git+https://github.com/jeffkaufman/icdiff.git
 ```
 (`flake8` needed for vim linting)
 
-Uninstall Everything ([source](https://stackoverflow.com/questions/11248073/what-is-the-easiest-way-to-remove-all-packages-installed-by-pip)):
+Uninstall everything ([source](https://stackoverflow.com/questions/11248073/what-is-the-easiest-way-to-remove-all-packages-installed-by-pip)):
+```bash
+$ pip3 uninstall -y -r <(pip3 freeze)
+```
+or
 ```bash
 $ pip3 freeze | xargs pip3 uninstall -y
 ```
