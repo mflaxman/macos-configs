@@ -2,7 +2,7 @@
 
 Regular
 ```bash
-$ brew install ag aspell automake colordiff go htop ipython jq postgresql ruby sqlite tree vim
+$ brew install ag aspell automake colordiff go htop ipython jq postgresql pyenv ruby sqlite tree vim
 ```
 
 Casks:
