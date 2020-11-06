@@ -39,12 +39,6 @@ export PATH=$PATH:$GOROOT/bin
 # https://stackoverflow.com/questions/56639315/updating-openssl-to-1-1-1-on-macos/62723840#62723840
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 
-# https://github.com/pyenv/pyenv
-# unsure if this belongs in .bashrc instead?
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-
 # include .bashrc if it exists
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc
