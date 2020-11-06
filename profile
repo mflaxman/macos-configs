@@ -8,9 +8,6 @@ alias ls='ls -GFh'
 alias random_password='cat /dev/random | LC_CTYPE=C tr -cd 123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz | head -c${1:-64}; echo'
 alias random_readable_password='cat /dev/random | LC_CTYPE=C tr -cd 23456789abcdefghjkmnpqrstuvwxyz | head -c${1:-16}; echo'
 
-# https://coderwall.com/p/euwpig/a-better-git-log
-git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-
 # For homebrew searching github and not getting rate-limited
 # https://stackoverflow.com/questions/20130681/setting-github-api-token-for-homebrew
 # https://github.com/settings/tokens
