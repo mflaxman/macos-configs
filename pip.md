@@ -2,7 +2,7 @@
 
 Regular
 ```bash
-$ pip3 black flake8 install ipython pyclean pyspelling requests virtualenv git+https://github.com/jeffkaufman/icdiff.git
+$ pip3 black flake8 install ipython pyclean pyspelling requests virtualenv
 ```
 (`flake8` needed for vim linting)
 
