@@ -40,7 +40,12 @@ $ cd ~/workspace && git clone https://github.com/bitcoin-core/secp256k1 && cd se
 $ ./autogen.sh && ./configure --enable-module-recovery && make && make check && sudo sudo make install
 ```
 
+## Configs
 
+Copy over hidden files to home directory:
+```bash
+$ cp {gitconfig,inputrc,profile,,screenrc,vimrc} ~/{.gitconfig,.inputrc,.profile,.screenrc,.vimrc}
+```
 
 ## SSH Key Instructions
 High level below, if it doesn't work or you want more info see [here](https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54) for details.
