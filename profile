@@ -19,25 +19,35 @@ export GEM_HOME="$HOME/.gem"
 # Sketchy fix, not sure why these are still required
 # (see if you can get by without it on next installation or just switch to rbenv altogether?):
 # https://help.rubygems.org/discussions/problems/739-how-to-run-applications-installed-by-gem
-export PATH=$PATH:/Users/mflaxman/.gem/bin
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+# export PATH=$PATH:/Users/mflaxman/.gem/bin
+# export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# https://stackoverflow.com/a/7213356
+alias vim='/usr/local/bin/vim'
 
 # https://docs.python-guide.org/starting/install3/osx/
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+# export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Add Visual Studio Code (code)
 # https://code.visualstudio.com/docs/setup/mac
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
+# Homebrew hack for openssl (not libressl)
+# https://stackoverflow.com/questions/56639315/updating-openssl-to-1-1-1-on-macos/62723840#62723840
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+
+# https://gist.github.com/vsouza/77e6b20520d07652ed7d
 # https://sourabhbajaj.com/mac-setup/Go/README.html
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
-# Homebrew hack for openssl (not libressl)
-# https://stackoverflow.com/questions/56639315/updating-openssl-to-1-1-1-on-macos/62723840#62723840
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+# https://github.com/pyenv/pyenv
+# unsure if this belongs in .bashrc instead?
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 
 # include .bashrc if it exists
 if [ -f ~/.bashrc ]; then
