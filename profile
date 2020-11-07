@@ -43,6 +43,9 @@ export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
+# Homebrew's sbin was not found in your PATH but you have installed formulae that put executables in /usr/local/sbin:
+export PATH="/usr/local/sbin:$PATH"
+
 # https://github.com/pyenv/pyenv
 # unsure if this belongs in .bashrc instead?
 if command -v pyenv 1>/dev/null 2>&1; then
