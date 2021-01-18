@@ -2,7 +2,7 @@
 
 Regular
 ```bash
-$ brew install ag aspell automake colordiff git-delta go htop ipython jq macvim postgresql pyenv python3 ruby sqlite tcl-tk tree vim
+$ brew install ag aspell automake colordiff git-delta go htop ipython jq macvim postgresql pyenv ruby sqlite tcl-tk tree vim
 ```
 
 Casks:
@@ -11,3 +11,9 @@ $ brew cask install atom freesmug-chromium keepassx openssl@1.1 postgres soundfl
 $ brew tap heroku/brew && brew install heroku
 ```
 TODO: migrate to keepassxc
+
+Install python in `pyinstaller`-friendly way:
+```bash
+$ time env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.8.6
+```
+(This takes ~4m. Repeat replacing `3.8.6` with every version you want to install)
