@@ -12,8 +12,27 @@ $ brew tap heroku/brew && brew install heroku
 ```
 TODO: migrate to keepassxc
 
+## pyenv
+
 Install python in `pyinstaller`-friendly way:
 ```bash
 $ time env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.8.6
 ```
 (This takes ~4m. Repeat replacing `3.8.6` with every version you want to install)
+
+See versions of python you have installed
+```bash
+$ pyenv versions
+```
+
+List all versions available to install:
+```bash
+$ pyenv install --list
+```
+
+Switch python version:
+```
+$ pyenv global 2.7.15
+$ python -V
+Python 2.7.15
+```
