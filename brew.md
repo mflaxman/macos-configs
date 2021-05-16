@@ -7,7 +7,7 @@ $ brew install ag aspell automake colordiff git-delta go htop ipython jq macvim 
 
 Casks:
 ```bash
-$ brew cask install atom brave-browser chromium firefox keepassx mactex openssl@1.1 postgres soundflower soundflowerbed transmission tunnelblick virtualbox visual-studio-code vlc
+$ brew cask install atom balenaetcher brave-browser chromium firefox keepassx mactex openssl@1.1 postgres soundflower soundflowerbed transmission tunnelblick virtualbox visual-studio-code vlc
 $ brew tap heroku/brew && brew install heroku
 ```
 TODO: migrate to keepassxc
