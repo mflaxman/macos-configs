@@ -3,3 +3,6 @@
 "\e[B": history-search-forward
 set show-all-if-ambiguous on
 set completion-ignore-case on
+
+# https://stackoverflow.com/questions/21226808/syntaxerror-multiple-statements-found-while-compiling-a-single-statement
+set enable-bracketed-paste off
