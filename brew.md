@@ -1,5 +1,10 @@
 # TODO: install brew (safely) instructions
 
+If you run into M1 issues, this may help ([source](https://stackoverflow.com/questions/64963370/error-cannot-install-in-homebrew-on-arm-processor-in-intel-default-prefix-usr)):
+```
+$ arch -x86_64 brew install foo
+```
+
 Regular
 ```bash
 $ brew install ag aspell automake colordiff git-delta go htop ipython jq macvim pandoc postgresql pyenv ruby sqlite tcl-tk tree Tor vim
