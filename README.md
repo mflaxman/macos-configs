@@ -1,11 +1,5 @@
 # osx-configs
 
-## Manual installation
-
-TODO: instructions for each
-
-Always `$ curl > filename` and inspect the contents before piping to bash!
-
 ## Brew Package Manager
 https://brew.sh/
 (see `brew.md` for details)
@@ -28,14 +22,6 @@ Open vim (with `$ vim`) and then type:
 
 Plan B for vim config if golang wasn't the focus:
 https://github.com/amix/vimrc
-
-## secp256k1 Instructions
-(This is for bitcoin stuff)
-
-```bash
-$ cd ~/workspace && git clone https://github.com/bitcoin-core/secp256k1 && cd secp256k1
-$ ./autogen.sh && ./configure --enable-module-recovery && make && make check && sudo sudo make install
-```
 
 ## Configs
 
