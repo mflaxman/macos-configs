@@ -49,6 +49,11 @@ Add key to agent (change filename accordingly):
 $ ssh-add ~/.ssh/id_ed25519_20200612
 
 ```
+## Proton VPN Manual Setup (no app to install)
+Root CA: `ProtonVPN_ike_root.der`
+Instructions: https://protonvpn.com/support/macos-ikev2-vpn-setup/
+List of Servers: https://account.protonvpn.com/downloads
+Credentials: https://account.protonvpn.com/account#openvpn
 
 ## DisplayPort (HDMI) Audio Config
 https://apple.stackexchange.com/questions/343902/how-to-control-sound-of-connected-external-monitor
