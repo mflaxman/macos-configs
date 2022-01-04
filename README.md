@@ -47,13 +47,49 @@ $ cp config ~/.ssh/config
 Add key to agent (change filename accordingly):
 ```bash
 $ ssh-add ~/.ssh/id_ed25519_20200612
-
 ```
+
 ## Proton VPN Manual Setup (no app to install)
 Root CA: `ProtonVPN_ike_root.der`
 Instructions: https://protonvpn.com/support/macos-ikev2-vpn-setup/
 List of Servers: https://account.protonvpn.com/downloads
 Credentials: https://account.protonvpn.com/account#openvpn
+
+## Bitcoin Core
+
+Download latest Bitcoin Core from <https://bitcoin.org/en/download> into this local directory:
+<https://bitcoin.org/bin/bitcoin-core-22.0/bitcoin-22.0-osx-signed.dmg>
+
+Make sure version you download matches local `SHA256SUMS.asc` (see `download.md`).
+```
+$ shasum -a 256 --check --ignore-missing SHA256SUMS | grep OK
+bitcoin-22.0-osx-signed.dmg: OK
+```
+
+Import all the release keys (FIXME: this is lousy because the keys to verify are coming from the file downloaded):
+```
+$ gpg --verify SHA256SUMS.asc 2>&1 | grep "using RSA key" | tr -s ' ' | cut -d ' ' -f5 | xargs gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys
+```
+TERRIBLE HACK: just google the shasuma it's using
+
+You can verify this with the following (not needed):
+```bash
+$ gpg --list-keys
+```
+
+Confirm the signature
+```bash
+$ gpg --verify SHA256SUMS.asc
+gpg: Signature made Sun 24 Nov 2019 03:14:42 AM CST
+gpg:                using RSA key 90C8019E36C2E964
+gpg: Good signature from "Wladimir J. van der Laan (Bitcoin Core binary release signing key) <laanwj@gmail.com>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 01EA 5486 DE18 A882 D4C2  6845 90C8 019E 36C2 E964
+```
+(untrusted message is because I don't have any web of trust sigs that verify Wladimir's key)
+
+Manually open the `.dmg` file to install.
 
 ## DisplayPort (HDMI) Audio Config
 https://apple.stackexchange.com/questions/343902/how-to-control-sound-of-connected-external-monitor
