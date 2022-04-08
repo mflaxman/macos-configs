@@ -33,7 +33,7 @@ $ arch -x86_64 brew reinstall virtualbox --no-quarantine
 
 ### Casks
 ```bash
-$ brew reinstall --cask atom balenaetcher brave-browser chromium firefox keepassxc mactex sparrow tor-browser visual-studio-code vlc --no-quarantine
+$ brew reinstall --cask atom balenaetcher brave-browser chromium firefox keepassxc mactex sparrow tor-browser transmission visual-studio-code vlc --no-quarantine
 ```
 TODO: add back in `soundflower` & `soundflowerbed`
 
