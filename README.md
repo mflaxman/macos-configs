@@ -50,10 +50,10 @@ $ ssh-add ~/.ssh/id_ed25519_20200612
 ```
 
 ## Proton VPN Manual Setup (no app to install)
-Root CA: `ProtonVPN_ike_root.der` 
-Instructions: https://protonvpn.com/support/macos-ikev2-vpn-setup/ 
-List of Servers: https://account.protonvpn.com/downloads 
-Credentials: https://account.protonvpn.com/account#openvpn 
+* Root CA: [`ProtonVPN_ike_root.der`](ProtonVPN_ike_root.der) (see [`download.md`](download.md))
+* Instructions: https://protonvpn.com/support/macos-ikev2-vpn-setup/ 
+* List of Servers: https://account.protonvpn.com/downloads 
+* Credentials: https://account.protonvpn.com/account#openvpn 
 
 ## Bitcoin Core
 
