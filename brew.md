@@ -41,9 +41,9 @@ TODO: add back in `soundflower` & `soundflowerbed`
 
 Install python in `pyinstaller`-friendly way:
 ```bash
-$ time env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.10.0
+$ time env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.10.6
 ```
-(This takes ~2m. Repeat replacing `3.10.0` with every version you want to install)
+(This takes ~2m as of 2022-08. Repeat replacing `3.10.6` with every version you want to install)
 
 See versions of python you have installed
 ```bash
