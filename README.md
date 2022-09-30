@@ -51,9 +51,9 @@ $ ssh-add ~/.ssh/id_ed25519_20200612
 
 ## Proton VPN Manual Setup (no app to install)
 * Root CA: [`ProtonVPN_ike_root.der`](ProtonVPN_ike_root.der) (see [`download.md`](download.md))
-* Instructions: https://protonvpn.com/support/macos-ikev2-vpn-setup/ 
-* List of Servers: https://account.protonvpn.com/downloads 
-* Credentials: https://account.protonvpn.com/account#openvpn 
+* Instructions: https://protonvpn.com/support/macos-ikev2-vpn-setup/
+* List of Servers: https://account.protonvpn.com/downloads
+* Credentials: https://account.protonvpn.com/account#openvpn
 
 ## Bitcoin Core
 
@@ -94,3 +94,7 @@ Manually open the `.dmg` file to install.
 ## DisplayPort (HDMI) Audio Config
 https://apple.stackexchange.com/questions/343902/how-to-control-sound-of-connected-external-monitor
 (soundflower/soundflowerbed already isntalled in `brew.md`)
+
+## Weasis DICOM Viewer
+Not in homebrew, not easily verifiable:
+<https://github.com/nroduit/Weasis/>
