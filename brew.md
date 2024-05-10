@@ -20,7 +20,7 @@ $ brew tap cuber/homebrew-libsecp256k1
 ### Regular
 With M1 (not x86):
 ```bash
-$ brew reinstall ag aspell automake colordiff diff-pdf git-delta go htop ipython jq libffi libusb libsecp256k1 macvim node openssl@3 pandoc pkg-config postgresql pyenv qrencode ruby rbenv sqlite tcl-tk tor tree vim --no-quarantine
+$ brew reinstall ag aspell automake colordiff diff-pdf git-delta go htop ipython jq libffi libusb libsecp256k1 macvim maestral node openssl@3 pandoc pkg-config postgresql pyenv qrencode ruby rbenv sqlite tcl-tk tor tree vim --no-quarantine
 ```
 Notes:
 * ` --no-quarantine` may not be strictly needed on this one
