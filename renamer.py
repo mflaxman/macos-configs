@@ -15,10 +15,12 @@ for root, dirs, files in os.walk(CWD):
         # will check for dupes with this later
         if not file.lower().endswith(".pdf"):
             continue
+        target = ""
         # 6 character prefix, #s only
         if len(file) == 10 and re.match("[0-9]{6}\.pdf", file, re.IGNORECASE):
             target = "%s-%s.%s" % (file[0:4], file[4:6], file[7:10])
             to_rename.append([file, target])
+        # 8 character prefix, #s only
         if len(file) == 12 and re.match("[0-9]{8}\.pdf", file, re.IGNORECASE):
             target = "%s-%s-%s.%s" % (file[0:4], file[4:6], file[6:8], file[9:12])
             to_rename.append([file, target])
@@ -34,9 +36,10 @@ for orig, target in to_rename:
     print(f" {orig} -> {target}")
 
 if to_rename:
-    if input("Would you like to rename these files? [y/N]: ").lower().strip() == "y":
+    input_string = f"Would you like to rename these {len(to_rename)} files? [y/N]: "
+    if input(input_string).lower().strip() == "y":
         for orig, target in to_rename:
-            print(f"renaming {orig} -> {target} ...")
+            print(f" renaming {orig} -> {target} ...")
             os.rename(os.path.join(CWD, orig), os.path.join(CWD, target))
     else:
         print("No changes made")
