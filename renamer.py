@@ -11,7 +11,7 @@ to_rename = []
 existing_files = set()
 for root, dirs, files in os.walk(CWD):
     # print(root, dirs, files, "\n")
-    for file in files:
+    for file in sorted(files):
         # will check for dupes with this later
         if not file.lower().endswith(".pdf"):
             continue
