@@ -18,18 +18,12 @@ $ brew tap cuber/homebrew-libsecp256k1
 ```
 
 ### Regular
-With M1 (not x86):
 ```bash
 $ brew reinstall ag aspell automake chromium colordiff diff-pdf git-delta go htop ipython jq libffi libusb libsecp256k1 macvim maestral node ollama openssl@3 pandoc pkg-config postgresql pyenv qrencode ruby rbenv sqlite tcl-tk tor tree vim --no-quarantine
 ```
 Notes:
 * ` --no-quarantine` may not be strictly needed on this one
 * If you get a `macvim`/`vim` error message, just follow the steps to unlink `vim` and install `macvim` (more [here](https://github.com/macvim-dev/macvim/issues/1185))
-
-With x86 (not M1). More on this [here](https://stackoverflow.com/questions/64963370/error-cannot-install-in-homebrew-on-arm-processor-in-intel-default-prefix-usr):
-```bash
-$ arch -x86_64 brew reinstall virtualbox --no-quarantine
-```
 
 ### Casks
 ```bash
