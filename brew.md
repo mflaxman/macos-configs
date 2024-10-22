@@ -20,7 +20,7 @@ $ brew tap cuber/homebrew-libsecp256k1
 ### Regular
 With M1 (not x86):
 ```bash
-$ brew reinstall ag aspell automake chromium colordiff diff-pdf git-delta go htop ipython jq libffi libusb libsecp256k1 macvim maestral node openssl@3 pandoc pkg-config postgresql pyenv qrencode ruby rbenv sqlite tcl-tk tor tree vim --no-quarantine
+$ brew reinstall ag aspell automake chromium colordiff diff-pdf git-delta go htop ipython jq libffi libusb libsecp256k1 macvim maestral node ollama openssl@3 pandoc pkg-config postgresql pyenv qrencode ruby rbenv sqlite tcl-tk tor tree vim --no-quarantine
 ```
 Notes:
 * ` --no-quarantine` may not be strictly needed on this one
@@ -36,6 +36,15 @@ $ arch -x86_64 brew reinstall virtualbox --no-quarantine
 $ brew reinstall --cask balenaetcher brave-browser firefox keepassxc mactex sparrow tor-browser transmission visual-studio-code vlc vscodium --no-quarantine
 ```
 TODO: add back in `soundflower` & `soundflowerbed`
+
+### Ollama
+```bash
+$ brew pull llama3.2
+$ brew services start ollama
+$ ollama run llama3.2
+>>> hello world
+Hello! It's nice to meet you. Is there something I can help you with or would you like to chat?
+```
 
 ## Python - pyenv
 
