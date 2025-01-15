@@ -27,7 +27,7 @@ Notes:
 
 ### Casks
 ```bash
-$ brew reinstall --cask balenaetcher brave-browser firefox keepassxc mactex sparrow tor-browser transmission visual-studio-code vlc vscodium --no-quarantine
+$ brew reinstall --cask balenaetcher brave-browser firefox keepassxc mactex raspberry-pi-imager sparrow tor-browser transmission visual-studio-code vlc vscodium --no-quarantine
 ```
 TODO: add back in `soundflower` & `soundflowerbed`
 
