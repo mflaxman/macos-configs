@@ -19,7 +19,7 @@ $ brew tap cuber/homebrew-libsecp256k1
 
 ### Regular
 ```bash
-$ brew reinstall ag aspell automake chromium colordiff csvkit diff-pdf git-delta go htop ipython jq libffi libusb libsecp256k1 macvim maestral node ollama openssl@3 pandoc pkg-config postgresql pyenv qrencode ruby rbenv sqlite tcl-tk tor tree vim --no-quarantine
+$ brew reinstall ag aspell automake chromium colordiff csvkit diff-pdf glow git-delta go htop ipython jq libffi libusb libsecp256k1 macvim maestral node ollama openssl@3 pandoc pkg-config postgresql pyenv qrencode ruby rbenv sqlite tcl-tk tor tree vim --no-quarantine
 ```
 Notes:
 * ` --no-quarantine` may not be strictly needed on this one
